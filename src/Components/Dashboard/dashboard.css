@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efeae2;
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  }
+  
+  .header {
+    background: #F0F2F5;
+    color: #54656F;
+  }
+  
+  .header .left {
+    cursor: pointer;
+    flex: 50vw 0;
+    border-right: 2px solid #F5F6F6 ;
+  }
+  
+  .header .right {
+    cursor: pointer;
+    flex: 0 50vw;
+  }
+  
+  .header-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .ripple {
+    background-position: center;
+    transition: background 0.6s;
+  }
+  .ripple:hover {
+    background: #e1e3e6 radial-gradient(circle, transparent 1%, #f4f5f8 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #a5a6a8;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  /* Button style */
+  button {
+    border: none;
+    padding: 14px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #54656F;
+    border-radius: 5px !important;
+    /* box-shadow: 0 0 4px #999; */
+    outline: none;
+  }
+  
+  .profile-image{
+    width: 10rem;
+    border-radius: 50%;
+    border: 1px solid #54656f35;
+  }
+  
+  .card{
+    width: 12rem;
+    box-shadow: 0 0 4px #999;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: #54656F;
+  }
+  .profile-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F0F2F5;
+    border-radius: 5px;
+  }

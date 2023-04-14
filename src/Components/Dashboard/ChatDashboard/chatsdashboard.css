@@ -1,0 +1,283 @@
+.full-whatsapp {
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F2F5;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  .chatlist {
+    flex: 30vw 0;
+    background: #FFFFFF;
+    border: 1px solid #E9EDEF;
+  }
+  
+  .chatarea {
+    text-align: center;
+    background-size: 40%;
+    color: #667781;
+    position: relative;
+    flex: 0 70vw;
+  }
+  
+  .chatarea .whatsapp-logo {
+    width: 30rem;
+  }
+  
+  .chatarea .dialogue {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .chat-area-footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .chat-area-footer p {
+    display: flex;
+    font-size: 0.8rem;
+    color: #667781;
+    align-items: center;
+  }
+  
+  .searchUser {
+  
+    background: #FFFFFF;
+    border: 0.7px solid #E9EDEF;
+  
+    border-top: none;
+    color: #54656f;
+    padding: 0 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  
+  .searchUser input {
+    width: 97%;
+    background-color: #f0f2f5;
+    height: 2rem;
+    border: none;
+  }
+  
+  .searchUser input:focus {
+    outline: none;
+  }
+  
+  .searchUser .left {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    width: 97%;
+    border-radius: 5px;
+    background: #f0f2f5;
+    border: 1px solid #E9EDEF;
+  }
+  
+  
+  .chatlist-unit {
+    display: flex;
+    flex-direction: row;
+    border: 0.7px solid #E9EDEF;
+    border-top: none;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 4.5rem;
+  }
+  
+  .chatlist-unit img {
+    width: 75px;
+    border-radius: 50%;
+    padding: 0 12px;
+  }
+  
+  .chatlist-unit .name {
+  
+    color: #111B21;
+  
+    font-size: 1.2rem;
+    margin: 0;
+  
+  }
+  
+  .chatlist-unit .time {
+  
+    color: #667781;
+    font-size: 0.7rem;
+    position: absolute;
+  
+    right: 1rem;
+    top: 1rem;
+  
+  }
+  
+  .chatlist-unit .last-message {
+    color: #667781;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 0;
+  }
+  
+  
+  .chatlist-navigation {
+    background: #f0f2f5;
+    border: 0.7px solid #E9EDEF;
+  
+    border-top: none;
+    color: #54656f;
+    align-items: center;
+    padding: 0 1rem;
+    height: 3.7rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .chatlist-navigation img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 40%;
+  }
+  
+  /* Message Area */
+  
+  .message-navigation {
+    background: #f0f2f5;
+    border: 0.7px solid #E9EDEF;
+    color: #54656f;
+    align-items: center;
+    height: 3.7rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .message-container {
+    position: relative;
+    flex: 0 70vw;
+    overflow-x: hidden;
+    background-color: #efeae2;
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  }
+  
+  .message-navigation img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 1rem;
+  }
+  
+  .message-navigation .left {
+  
+    display: flex;
+  
+  }
+  
+  .message-navigation .left p {
+    margin: 0;
+  }
+  
+  .message-navigation .right {
+    display: flex;
+    justify-content: space-around;
+    width: 7rem;
+  
+  }
+  
+  .message-navigation .left .name {
+    color: #111B21;
+    font-size: 1.3rem;
+  }
+  
+  .message-navigation .left .Last-seen {
+    font-size: 0.7rem;
+  }
+  
+  /* Message typer Section */
+  .message-typer {
+  
+    background: #f0f2f5;
+    border: 0.7px solid #E9EDEF;
+    position: absolute;
+    bottom: 0;
+    color: #54656f;
+    align-items: center;
+    height: 3.7rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .message-typer input {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .message-typer input:focus {
+    outline: none;
+  }
+  
+  .message-sender-form{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Message Unit Styles */
+  
+  .unit-message .message-by-target {
+    float: left;
+    background-color: #FFFFFF;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .unit-message .message-by-user {
+    float: right;
+    background-color: #FFFFFF;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: fixed;
+    right: 4rem;
+  }
+  
+  .unit-message {
+    margin: 3rem 0rem;
+    padding: 1rem 5rem;
+  }
+  
+  .unit-message p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  
+  /* message-done container */
+  
+  .message-done{
+    position: fixed;
+    bottom: 6rem;
+  }
+  hr{
+    margin: 0;
+    padding: 0;
+    color: #667781;
+  }
